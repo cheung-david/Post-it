@@ -51,7 +51,7 @@ var data = [
     {
         name: "Living At The Top",
         image: "https://images.unsplash.com/photo-1434434319959-1f886517e1fe?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=218dfdd2c0735dbd6ca0f718064a748b",
-        description: "Tranquillity at it's best."
+        description: "Tranquillity at its best."
     },
     {
         name: "Spark",
