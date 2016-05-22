@@ -16,7 +16,9 @@ var indexRoutes         = require("./routes/index"),
     articleRoutes       = require("./routes/articles"),
     commentRoutes       = require("./routes/comment");
 
-mongoose.connect(process.env.DATABASEURL);
+// Check for existing environment variable, otherwise use local db
+var dbURL = process.env.DATABASEURL || "mongodb://localhost/post_it";
+mongoose.connect(dbURL);
 
 // Configurations
 app.use(express.static(__dirname + "/public"));
