@@ -1,0 +1,72 @@
+<% include ../partials/header %>
+<script type="text/javascript">
+    App.articles = <%-JSON.stringify(articles)%>;
+    App.query = <%-JSON.stringify(query)%>;
+</script>
+
+<div class="container">
+     <header class="jumbotron">
+         <div class="container">
+            <h1>Welcome to Post It!</h1>
+            <p>View and share elegant photos from around the world.</p>
+            <p>
+                <a class="btn btn-primary btn-large" href="/articles/new"> Add New Post </a>
+            </p>
+        </div>
+    </header>
+    
+    <div class="ng-cloak text-center" id="columns">
+        <div ng-if="objContent" ng-repeat="article in objContent | filter:query" >
+                <div class="pin">
+                        <img ng-if="article.image" ng-src="{{article.image}}">
+                        <h4> {{ article.name }} </h4>
+                        <p class="author">
+                            <span ng-if="article.author.id">
+                                Posted By: {{article.author.username}}
+                            </span>
+                           
+                            <span ng-if="!article.author.id">
+                                Posted by: Seed     
+                            </span>
+                        </p>
+                        <p>
+                            {{article.description.substring(0, 102)}}
+                            <span ng-if="article.description.length > 102">
+                                ...
+                            </span>
+                        </p>
+                        <p>
+                            <a ng-href="/articles/{{article._id}}" class="btn btn-primary">More Info</a>
+                        </p>
+                </div>
+        </div>
+        <!-- EJS Approach For Displaying View
+        <% articles.forEach(function(article){ %>
+                <div class="pin">
+                        <% if(article.image){ %>
+                            <img src="<%= article.image %>">
+                        <% } %>
+                        <h4> <%= article.name %> </h4>
+                        <p class="author">
+                            <% if (article.author.id){ %>
+                            Posted By: <%= article.author.username %>
+                            <% } else { %>
+                                Posted by: Seeding Bot                            
+                            <% } %>
+                        </p>
+                        <p>
+                            <%= article.description.substring(0, 100) %>
+                            <% if (article.description.length > 100) { %>
+                                ...
+                            <% } %>    
+                        </p>
+                        <p>
+                            <a href="/article/<%= article._id %>" class="btn btn-primary">More Info</a>
+                        </p>
+                </div>
+        <% }); %>
+        -->
+    </div>
+</div>
+
+<% include ../partials/footer %>
