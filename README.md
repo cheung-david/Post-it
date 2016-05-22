@@ -10,3 +10,5 @@
 • Deployed on Heroku
 
 • Implemented with the MEAN stack
+
+V 0.1.5
