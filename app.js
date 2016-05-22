@@ -16,8 +16,7 @@ var indexRoutes         = require("./routes/index"),
     articleRoutes       = require("./routes/articles"),
     commentRoutes       = require("./routes/comment");
 
-mongoose.connect("mongodb://localhost/post_it");
-
+mongoose.connect(process.env.DATABASEURL);
 
 // Configurations
 app.use(express.static(__dirname + "/public"));
