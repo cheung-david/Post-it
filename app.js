@@ -27,7 +27,7 @@ app.use(methodOverride("_method"));
 app.use(flash());
 app.set("view engine", "ejs");
 // Seed database with initial data
- seedDB();
+// seedDB();
 
 // Passport setup
 app.use(require("express-session")({
