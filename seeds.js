@@ -44,9 +44,9 @@ var data = [
         description: "A sweeeet breakfast."
     },
     {
-        name: "Cloud's Rest",
-        image: "https://images.unsplash.com/photo-1443890923422-7819ed4101c0?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=a9c79afe3d7a158a876502b1cc548332",
-        description: "This is a mountain for combat training. No bathrooms or help nearby. Wild animals on the move."
+        name: "Fly",
+        image: "https://images.unsplash.com/photo-1453743327117-664e2bf4e951?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=d5447d7f37886d9890d448d0858da12f",
+        description: "The early bird gets the worm."
     },
     {
         name: "Living At The Top",
@@ -59,14 +59,14 @@ var data = [
         description: "A portal to the other side"
     },
     {
-        name: "Arctic Soldier",
-        image: "https://images.unsplash.com/photo-1447876394678-42a7efa1b6db?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=e20dd23bf8f3008a1a0f81e153452d27",
-        description: "Rough terrains and frequent blizzards. There are no bathrooms or people nearby. Wolf Territory."
+        name: "Speed",
+        image: "https://images.unsplash.com/photo-1452573992436-6d508f200b30?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=daee730ee0dc07303ea944759e5de1ea",
+        description: "Move like the wind."
     },
     {
-        name: "Class A Climbers",
-        image: "https://images.unsplash.com/photo-1440347306022-52a6c51b8dc1?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=8ce900c2b46e89b23ba4b8ae0ba1e689",
-        description: "Class A rated mountain. Home for professional mountain climbers."
+        name: "CN Tower",
+        image: "https://images.unsplash.com/photo-1437326516294-01d0da392e11?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=5fd871029d3b4011e04f09d533fea68e",
+        description: "A beautiful view in Toronto."
     }
 ]       
 
