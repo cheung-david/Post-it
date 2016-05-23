@@ -19,12 +19,6 @@ body {
     font-family: Lato;
 }
 
-@media screen and (max-width: 480px) {
-    #content {
-        background-color: rgba(255,255,255,0.3);
-    }
-}
-
 #content {
     text-align: center;
     padding-top: 20%;
@@ -32,6 +26,38 @@ body {
                  0px 8px 12px rgba(0,0,0,0.1),
                  0px 18px 23px rgba(0,0,0,0.1);
 }
+
+@media screen and (min-height: 800px) {
+    #content {
+        padding-top: 27%;
+    }
+}
+
+@media screen and (min-height: 1000px) {
+    #content {
+        padding-top: 35%;
+    }
+}
+
+@media screen and (min-height: 1220px) {
+    #content {
+        padding-top: 50%;
+    }
+}
+
+@media screen and (min-height: 1420px) {
+    #content {
+        padding-top: 72%;
+    }
+}
+
+@media screen and (min-height: 1680px) {
+    #content {
+        padding-top: 80%;
+    }
+}
+
+
 
 a {
     text-shadow: none;
